@@ -24,3 +24,5 @@ export const FRUSTRATING_PHRASES = [
   '23',
   '24',
 ]
+
+export const FIELD_SIZE = 25
