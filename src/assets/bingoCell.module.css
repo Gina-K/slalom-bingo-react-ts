@@ -4,3 +4,8 @@
   color: orange;
   border: 1px solid darkcyan;
 }
+
+.crossed {
+  text-decoration: line-through;
+  background-color: gray;
+}

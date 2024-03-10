@@ -26,3 +26,4 @@ export const FRUSTRATING_PHRASES = [
 ]
 
 export const FIELD_SIZE = 25
+export const FREE_CELL_INDEX = 12
