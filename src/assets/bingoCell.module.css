@@ -1,0 +1,6 @@
+.container {
+  text-align: center;
+  aspect-ratio: 1 / 1;
+  color: orange;
+  border: 1px solid darkcyan;
+}

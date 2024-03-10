@@ -1,0 +1,13 @@
+.container {
+  max-width: 750px;
+  min-width: 250px;
+  margin: 4rem auto 0;
+  border: 1px solid green;
+}
+
+.grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(5, 1fr);
+  border: 1px solid darkblue;
+}
