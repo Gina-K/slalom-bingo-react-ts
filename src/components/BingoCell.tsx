@@ -11,13 +11,11 @@ interface BingoCellProps {
 
 export const BingoCell = ({ text, isCrossed, isWinning, onClick }: BingoCellProps) => {
   return (
-    <>
-      <div
-        className={`${cell.container} ${isCrossed ? cell.crossed : ''} ${isWinning ? cell.winning : ''}`}
-        onClick={onClick}
-      >
-        <span>{text}</span>
-      </div>
-    </>
+    <div
+      className={`${cell.container} ${isCrossed ? cell.crossed : ''} ${isWinning ? cell.winning : ''}`}
+      onClick={onClick}
+    >
+      <span>{text}</span>
+    </div>
   )
 }

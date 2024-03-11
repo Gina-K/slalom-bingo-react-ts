@@ -1,22 +1,21 @@
-import { useCallback, useEffect, useState } from 'react'
+import { useCallback, useState } from 'react'
 
 import { FREE_CELL_INDEX, FRUSTRATING_PHRASES } from '../consts'
+import { fisherYatesShuffle } from '../utils'
 
 interface UseFrustratingPhrasesResult {
   phrases: string[]
+  fillBingoField: () => void
 }
 
 export const useFrustratingPhrases = (): UseFrustratingPhrasesResult => {
   const [phrases, setPhrases] = useState<string[]>([])
 
   const fillBingoField = useCallback(() => {
-    // TODO: replace with correct shuffle function
-    const shuffledPhrases = FRUSTRATING_PHRASES.toSorted(() => Math.random() - 0.5)
+    const shuffledPhrases = fisherYatesShuffle(FRUSTRATING_PHRASES)
     shuffledPhrases.splice(FREE_CELL_INDEX, 0, 'free slot')
     setPhrases(shuffledPhrases)
   }, [])
 
-  useEffect(() => fillBingoField, [fillBingoField])
-
-  return { phrases }
+  return { phrases, fillBingoField }
 }

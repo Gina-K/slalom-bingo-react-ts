@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+
 import fffuuuUrl from '../assets/imgs/pushen_fffuuu.gif'
 import reward from '../assets/reward.module.css'
 
@@ -20,7 +21,7 @@ export const Reward = ({ isNeeded }: RewardProps) => {
 
   return (
     <div className={`${reward.container} ${isRewardShown ? '' : reward.hidden}`} onClick={handleClick}>
-      <img src={fffuuuUrl} alt="animation with Pusheen cat in rage" className={reward.img}></img>
+      <img src={fffuuuUrl} alt="animation with Pusheen cat in rage" className={reward.img} />
     </div>
   )
 }
