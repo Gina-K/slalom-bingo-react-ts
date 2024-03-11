@@ -1,15 +1,91 @@
 .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  font-size: 11px;
+  color: #54371e;
+  min-width: 50px;
+  min-height: 50px;
+  padding: 0.25em;
   aspect-ratio: 1 / 1;
-  color: orange;
-  border: 1px solid darkcyan;
+  background-color: #fff7f1;
+  border-radius: 0.5em;
+  cursor: pointer;
+  transition: all .1s ease-in-out;
+}
+
+.container:hover {
+  background-color: #fff7f1;
+  transform: scale(1);
+}
+
+.container:nth-child(13) {
+  color: rgba(0, 0, 0, 0%);
+  background-image: url("./imgs/pusheen_roller.webp");
+  background-size: contain;
+  cursor: default;
+}
+
+.container:nth-child(13):hover {
+  transform: scale(1);
 }
 
 .crossed {
   text-decoration: line-through;
-  background-color: gray;
+  color: rgb(98, 85, 71);
+  background-color: rgba(98, 85, 71, 10%);
+}
+
+.crossed:hover {
+  background-color: rgba(98, 85, 71, 10%);
 }
 
 .winning {
-  background-color: olivedrab;
+  background-color: #e78895;
+  color: white;
+}
+
+.winning:hover {
+  background-color: #e78895;
+}
+
+@media (min-width: 768px) {
+  .container {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .container {
+    font-size: 14px;
+    border: 1px solid #ffe4c9;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .container {
+    font-size: 10px;
+    letter-spacing: -0.05em;
+    border: 1px solid #ffe4c9;
+  }
+}
+
+@media (max-width: 319px) {
+  .container {
+    font-size: 9px;
+    letter-spacing: -0.05em;
+    border: 1px solid #ffe4c9;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .container:hover {
+    background-color: #fdf1e5;
+    transform: scale(1.05);
+  }
+
+  .winning:hover {
+    background-color: #e78895;
+  }
 }

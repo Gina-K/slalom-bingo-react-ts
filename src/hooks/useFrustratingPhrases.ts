@@ -12,7 +12,7 @@ export const useFrustratingPhrases = (): UseFrustratingPhrasesResult => {
   const fillBingoField = useCallback(() => {
     // TODO: replace with correct shuffle function
     const shuffledPhrases = FRUSTRATING_PHRASES.toSorted(() => Math.random() - 0.5)
-    shuffledPhrases.splice(FREE_CELL_INDEX, 0, 'free')
+    shuffledPhrases.splice(FREE_CELL_INDEX, 0, 'free slot')
     setPhrases(shuffledPhrases)
   }, [])
 

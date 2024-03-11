@@ -49,6 +49,7 @@ export const BingoField = () => {
 
   return (
     <div className={field.container}>
+      <h2 className={field.title}>Slalom Bingo</h2>
       <div className={field.grid}>
         {phrases.map((phrase, index: number) => {
           const isWinning = winningLines.some((line) => line.includes(index))

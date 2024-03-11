@@ -3,12 +3,31 @@
   max-width: 750px;
   min-width: 250px;
   margin: 4rem auto 0;
-  border: 1px solid green;
+  padding: 1rem;
+  background-color: #ffe4c9;
 }
 
 .grid {
   display: grid;
   width: 100%;
   grid-template-columns: repeat(5, 1fr);
-  border: 1px solid darkblue;
+  grid-gap: 0.25rem;
+}
+
+.title {
+  color: #54371e;
+  text-align: center;
+  font-size: 2.5rem;
+  letter-spacing: 0.05em;
+  margin: 0 0 0.5rem 0;
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding: 1rem 0.25rem;
+  }
+
+  .grid {
+    grid-gap: 0;
+  }
 }
