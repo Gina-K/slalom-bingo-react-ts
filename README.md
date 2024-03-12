@@ -1,30 +1,46 @@
-# React + TypeScript + Vite
+# Freestyle Slalom Bingo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Freestyle slalom skater](https://upload.wikimedia.org/wikipedia/commons/a/a4/Slalominvalids.JPG)
 
-Currently, two official plugins are available:
+*The picture is from Wikipedia: [Freestyle slalom skating](https://en.wikipedia.org/wiki/Freestyle_slalom_skating)*
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Sometimes when you go slalom training, it seems like everything is against you. Days like this just happen, next time it
+will be better (or every other time). For now, let's check out this
+[Slalom Bingo](https://slalom-bingo-react-ts.vercel.app/) and see just how bad it was.
 
-## Expanding the ESLint configuration
+## Working version
+https://slalom-bingo-react-ts.vercel.app/
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## How to run locally
 
-- Configure the top-level `parserOptions` property like this:
+1. Clone or download this repository.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. Check if you have **Node.js** and **npm** installed on your computer (I used here Node v18.16.0 and npm 9.5.1):
+
+   `node -v`
+
+   `npm -v`
+
+
+3. If you don't have one, install **Node.js** and **npm** for your OS from [https://nodejs.org/](https://nodejs.org/).
+   When you install Node.js, you automatically get npm installed.
+
+
+4. Go to the project folder and install dependencies:
+
+   `npm i`
+
+
+6. Run the app :
+
+   `npm run dev`
+
+...and go to  http://localhost:5173/
+
+## Tech Stack
+
+- Vite
+- React
+- Typescript
+- CSS modules
